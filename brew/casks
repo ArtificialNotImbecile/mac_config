@@ -1,7 +1,5 @@
-adoptopenjdk
 burp-suite
-eloston-chromium
-firefox
+google-chrome
 flux
 kindle
 obs
@@ -10,10 +8,7 @@ rectangle
 scroll-reverser
 sensiblesidebuttons
 spotify
-vagrant
-virtualbox
 visual-studio-code
 vlc
 wireshark
-xquartz
 zotero
