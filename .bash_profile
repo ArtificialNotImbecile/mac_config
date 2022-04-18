@@ -25,9 +25,6 @@ else
     RESET="\033[m"
 fi
 
-IP='127.0.0.1'
-PORT='7890'
-
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PS1="\[${BOLD}${MAGENTA}\]\u\[$WHITE\]@\[$ORANGE\]\h\[$WHITE\]:\[$GREEN\]\w\[$RESET\]\$ \[$RESET\]"
 export EDITOR='vim'
@@ -37,6 +34,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# set proxy for terminal, using clashX backend
+IP='127.0.0.1'
+PORT='7890'
 function setproxy() {
     export {http,https,ftp}_proxy="$IP:$PORT"
 }
